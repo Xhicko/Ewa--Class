@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
+        margin: 2em auto;
+        background-color: #000;
+        color: #fff;
+        font-family: monospace;
+        border-radius: .5em;
+    }
+
+    .Wrapper h2{
+        text-transform: uppercase;
+    }
+
+    .Wrapper th{
+        text-transform: uppercase;
+    }
+
+    .Wrapper table{
+        text-align: center;
+        width: 90%;
+    }
+
+    /* .Wrapper table, th, td{
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+     */
+     .Wrapper table{
+        border-spacing: 5px;
+     }
+
+     .Wrapper  th, td{
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+
+    caption{
+        color: red;
+        padding: .5em;
+        text-transform: uppercase;
+    }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="Wrapper">
+        <h1>HTML TABLES</h1>
+
+    <table>
+        <caption>Names Of Successful Candidates in the last Deans cup competition</caption>
+        <tr>
+            <th>NO</th>
+            <th>Name</th>
+            <th>Matric No</th>
+            <th>Faculty</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Ewalashi Ogu</td>
+            <td>FT22ACMP0053</td>
+            <td>Applied Science</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td>Andrew Omoha</td>
+            <td>FT22ACMP0086</td>
+            <td>Applied Science</td>
+            <td>Computer Science</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Monthly Trouble Makers</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>Ewalashi</td>
+            <td>Onye</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Kelsey</td>
+            <td>Dennis</td>
+            <td>150</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Names of students that passed</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="3">2022/20223</th>
+        </tr>
+        <tr>
+            <td>Ewalashi</td>
+            <td>Onye</td>
+        </tr>
+        <tr>
+            <td>Kelsey</td>
+            <td>Dennis</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Names of students that failed</caption>
+        <colgroup>
+            <col span="5" style="background-color: green;" >
+        </colgroup>
+
+        <tr>
+           <th>Monday</th>
+           <th>Tuesday</th>
+           <th>Wednesday</th>
+           <th>Thursday</th>
+           <th>Friday</th>
+           <th>Saturday</th>
+           <th>Sunday</th>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>Benjamin</td>
+          <td>Tasha</td>
+          <td>Bianca</td>
+          <td>Stephhnie</td>
+          <td>James</td>
+          <td>Endurance</td>
+        </tr>
+        <tr>
+           <td>Steven</td>
+           <td>John</td>
+           <td>Florence</td>
+           <td>Evidence</td>
+           <td>Jude</td>
+           <td>Blessing</td>
+           <td>Mark</td>
+        </tr>
+    </table>
+
+    </div>
+
+</body>
+</html>
